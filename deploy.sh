@@ -13,10 +13,10 @@ cd docs/.vuepress/dist
 echo 'blog.kimen.com.cn' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:kimentang/kimen-blog.git
+  githubUrl=git@github.com:Kimentanm/kimen-blog.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://kimentang:${GITHUB_TOKEN}@github.com/kimentang/kimen-blog.git
+  githubUrl=https://Kimentanm:${GITHUB_TOKEN}@github.com/Kimentanm/kimen-blog.git
   git config --global user.name "Kimen"
   git config --global user.email "Kimentanm@gmail.com"
 fi
