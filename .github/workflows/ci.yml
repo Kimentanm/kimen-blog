@@ -3,7 +3,7 @@ name: CI
 #on: [push]
 
 # 在master分支发生push事件时触发。
-on: 
+on:
   push:
     branches:
       - master
@@ -26,7 +26,7 @@ jobs: # 工作流
       - name: run deploy.sh # 步骤3 （同时部署到github和coding）
         env: # 设置环境变量
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-          CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
+#          CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
         run: npm install && npm run deploy
 
       # - name: Build and Deploy # 步骤3 （只提交到github可以使用这个步骤）
