@@ -32,7 +32,7 @@ echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # �
 if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
   codingUrl=git@e.coding.net:Kimentanm/kimen/kimen-blog.git
 else
-  codingUrl=https://Kimentanm:${CODING_TOKEN}@e.coding.net/Kimentanm/kimen/kimen-blog.git
+  codingUrl=https://ptf9ya3rkbs8:${CODING_TOKEN}@e.coding.net/Kimentanm/kimen/kimen-blog.git
 fi
 git add -A
 git commit -m "${msg}"
