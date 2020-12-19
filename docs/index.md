@@ -11,12 +11,12 @@ bannerBg: /img/bg.jpg
 features: # 可选的
   - title: 后端
     details: Java、Kotlin、Spring框架等后端技术
-    link: /web/ # 可选
-    imgUrl: /img/web.png # 可选
+    link: /backend/ # 可选
+    imgUrl: /img/backend.png # 可选
   - title: 前端
-    details: Vue、CSS、ES6前端技术
-    link: /ui/
-    imgUrl: /img/ui.png
+    details: Vue、Android、Electron前端技术
+    link: /front/
+    imgUrl: /img/front.png
   - title: 技术
     details: 技术文档、教程、技巧、总结等文章
     link: /technology/
