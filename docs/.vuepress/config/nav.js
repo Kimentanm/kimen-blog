@@ -2,7 +2,10 @@ module.exports = [
   { text: '首页', link: '/' },
   {
     text: '前端',
-    link: '/web/'
+    link: '/front/',
+    items: [
+      { text: 'Vue', link: '/pages/0fb788/' },
+    ],
   },
   {
     text: '后端',
