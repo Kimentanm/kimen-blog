@@ -24,7 +24,8 @@ module.exports = [
     text: '更多',
     link: '/more/',
     items: [
-      { text: 'MAC软件分享', link: '/pages/809d08/' }
+      { text: 'MAC软件分享', link: '/pages/809d08/' },
+      { text: '学习', link: '/pages/d7e20d/' }
     ],
   },
   { text: '关于', link: '/about/' },
