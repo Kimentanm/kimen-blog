@@ -9,7 +9,7 @@ module.exports = [
   },
   {
     text: '后端',
-    link: '/ui/',
+    link: '/backend/',
   },
   {
     text: '技术',
@@ -25,7 +25,8 @@ module.exports = [
     link: '/more/',
     items: [
       { text: 'MAC软件分享', link: '/pages/809d08/' },
-      { text: '学习', link: '/pages/d7e20d/' }
+      { text: '学习', link: '/pages/d7e20d/' },
+      { text: '运维', link: '/pages/2aae23/' }
     ],
   },
   { text: '关于', link: '/about/' },
