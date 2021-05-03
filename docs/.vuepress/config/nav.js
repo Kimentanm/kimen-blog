@@ -10,6 +10,10 @@ module.exports = [
   {
     text: '后端',
     link: '/backend/',
+    items: [
+      { text: 'Java', link: '' },
+      { text: '数据库', link: '/pages/69b834/' },
+    ],
   },
   {
     text: '技术',
