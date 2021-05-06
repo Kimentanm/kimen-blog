@@ -1,7 +1,7 @@
-<p align="center"><a href="https://xugaoyi.com/" target="_blank" rel="noopener noreferrer"><img width="180" src="http://img.kimen.com.cn/img/20201207164724.jpeg" alt="logo"></a></p>
+<p align="center"><a href="https://blog.kimen.com.cn/" target="_blank" rel="noopener noreferrer"><img width="180" src="http://img.kimen.com.cn/img/20201207164724.jpeg" alt="logo"></a></p>
 
 <p align="center">
-  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE"><img src="https://img.shields.io/github/license/xugaoyi/vuepress-theme-vdoing" alt="License"></a>
+  <a href="https://github.com/kimentanm/kimen-blog/blob/master/LICENSE"><img src="https://img.shields.io/github/license/kimentanm/kimen-blog" alt="License"></a>
 </p>
 
 <h2 align="center">kimen-blog</h2>
