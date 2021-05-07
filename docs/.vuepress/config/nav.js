@@ -37,7 +37,8 @@ module.exports = [
     items: [
       { text: 'MAC软件分享', link: '/pages/809d08/' },
       { text: '学习', link: '/pages/d7e20d/' },
-      { text: '运维', link: '/pages/2aae23/' }
+      { text: '运维', link: '/pages/2aae23/' },
+      { text: '折腾', link: '/pages/3426a4/' }
     ],
   },
   { text: '关于', link: '/about/' },
