@@ -138,6 +138,9 @@ export function resolveSidebarItems (page, regularPath, site, localePath) {
     return []
   } else {
     const { base, config } = resolveMatchingConfig(regularPath, sidebarConfig)
+    if (config === 'auto') {
+      return resolveHeaders(page)
+    }
     return config
       ? config.map(item => resolveItem(item, pages, base))
       : []
@@ -238,6 +241,7 @@ function resolveItem (item, pages, base, groupDepth = 1) {
       path: item.path,
       title: item.title,
       sidebarDepth: item.sidebarDepth,
+      initialOpenGroupIndex: item.initialOpenGroupIndex,
       children: children.map(child => resolveItem(child, pages, base, groupDepth + 1)),
       collapsable: item.collapsable !== false
     }
@@ -266,10 +270,10 @@ export function zero (d) {
 
 // 获取时间的时间戳
 export function getTimeNum (post) {
-  let dateStr = post.frontmatter.date || post.lastUpdated
+  let dateStr = post.frontmatter.date || post.lastUpdated || new Date()
   let date = new Date(dateStr)
-  if (date == "Invalid Date") { // 修复new Date()在Safari下出现Invalid Date的问题
-    date = new Date(dateStr.replace(/-/g, '/'))
+  if (date == "Invalid Date" && dateStr) { // 修复new Date()在Safari下出现Invalid Date的问题
+    date = new Date(dateStr?.replace(/-/g, '/'))
   }
   return date.getTime()
 }
@@ -282,6 +286,6 @@ export function compareDate (a, b) {
 // 将特殊符号编码（应用于url）
 export function encodeUrl (str) {
   str = str + ''
-  str = str.replace(/ |((?=[\x21-\x7e]+)[^A-Za-z0-9])/g, '-')
+  str = str?.replace(/ |((?=[\x21-\x7e]+)[^A-Za-z0-9])/g, '-')
   return str
 }

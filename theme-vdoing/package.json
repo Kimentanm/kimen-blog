@@ -1,9 +1,9 @@
 {
   "name": "vuepress-theme-vdoing",
-  "version": "1.6.4",
+  "version": "1.8.3",
   "description": "Vdoing theme for VuePress. 一个基于VuePress的知识管理兼博客主题。",
   "author": {
-    "name": "gaoyi(Kimen) Xu"
+    "name": "gaoyi(Evan) Xu"
   },
   "homepage": "https://github.com/xugaoyi/vuepress-theme-vdoing#readme",
   "bugs": {
@@ -41,7 +41,7 @@
   "license": "MIT",
   "main": "index.js",
   "maintainers": [{
-    "name": "Kimen Tang",
+    "name": "Evan xu",
     "email": "894072666@qq.com"
   }]
 }

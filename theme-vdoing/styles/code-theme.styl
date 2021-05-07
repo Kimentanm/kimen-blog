@@ -134,6 +134,16 @@ codeThemeLight()
     cursor: help;
   }
 
+  // 行高亮颜色
+  div[class*="language-"]
+    .highlight-lines
+      .highlighted
+        background-color rgba(200, 200, 200, 40%)
+    &.line-numbers-mode
+      .highlight-lines .highlighted
+        &:before
+          background-color rgba(200, 200, 200, 40%)
+
 
 // 适合深色背景 // @import '~prismjs/themes/prism-tomorrow.css'
 codeThemeDark()
