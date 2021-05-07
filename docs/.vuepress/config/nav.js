@@ -19,16 +19,16 @@ module.exports = [
     text: '技术',
     link: '/technology/',
     items: [
-      { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
+      { text: '技术文档', link: '/pages/8ce4c8/' },
       { text: '经验之谈', link: '/pages/61e8fc/' },
-      { text: '疑难杂症', link: '/pages/117708e0af7f0bd9/' },
+      { text: '疑难杂症', link: '/pages/b2cfaa/' },
     ],
   },
   {
     text: '工具',
     link: '/tool/',
     items: [
-      { text: 'IDE', link: '/pages/c5a516/' }
+      { text: 'IDE', link: '/pages/1ebf5b/' }
     ],
   },
   {
