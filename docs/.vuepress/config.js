@@ -164,13 +164,12 @@ module.exports = {
         ],
       },
     ],
-
-    'vuepress-plugin-baidu-autopush', // 百度自动推送
-
+    // 百度自动推送
+    'vuepress-plugin-baidu-autopush',
+    // 代码块复制按钮
     [
       'one-click-copy',
       {
-        // 代码块复制按钮
         copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
         copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
         duration: 1000, // prompt message display time.
@@ -235,8 +234,9 @@ module.exports = {
         },
       },
     ],
+    // "上次更新"时间格式
     [
-      '@vuepress/last-updated', // "上次更新"时间格式
+      '@vuepress/last-updated',
       {
         transformer: (timestamp, lang) => {
           const moment = require('moment') // https://momentjs.com/
@@ -244,6 +244,17 @@ module.exports = {
         },
       },
     ],
+    // RSS订阅
+    [
+      'vuepress-plugin-rss',
+      {
+        site_url: 'https://blog.kimen.com.cn', // required
+        // filter some post
+        filter: (frontmatter) => { return [true|false] },
+        // How many articles
+        count: 20
+      }
+    ]
   ],
   // configureWebpack: {
   //   //webpack别名 如![Image from alias](~@alias/image.png)
