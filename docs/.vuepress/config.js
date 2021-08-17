@@ -246,7 +246,7 @@ module.exports = {
     ],
     // RSS订阅
     [
-      'vuepress-plugin-rss',
+      '@vuepress-reco/vuepress-plugin-rss',
       {
         site_url: 'https://blog.kimen.com.cn', // required
         // filter some post
