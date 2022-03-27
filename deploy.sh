@@ -10,7 +10,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github
-echo 'blogs.kimen.com.cn' > CNAME
+echo 'blog.kimen.com.cn' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:Kimentanm/kimen-blog.git
